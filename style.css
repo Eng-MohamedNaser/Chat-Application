@@ -2,7 +2,15 @@
     margin: 4%;
 }
 #messagesContainer{
-    height: 100%;
-   margin: 0em;
-    overflow-y: auto
+    height: 18em;
+    width: 100%;
+    margin: 0em;
+    overflow-y: auto;
+}
+textarea {
+    resize: none;
+  }
+body{
+    padding: auto;
+    margin: auto;
 }
