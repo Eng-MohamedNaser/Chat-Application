@@ -152,7 +152,7 @@ async function sendMessage(){
   message = document.querySelector('#messageInput').value.trim().replace(/\r?\n/g, '<br>')
   if(message !=""){
     document.querySelector('#messageInput').value=""
-    document.querySelector('#seconds').innerText=2000
+    document.querySelector('#seconds').innerText=60
     date = new Date().toISOString()
     let body = {data:'{"message":"'+message+'","userName":"'+userName+'","userId":"'+userId+'","date":"'+date+'"}',
     name:"send-event",channel:roomName}
