@@ -116,7 +116,7 @@ let reciveMassages =async function(channel){
 
       chatContainer.insertAdjacentHTML("beforeend",
       '<li class="right clearfix" style="width:50%;margin-left:50%;display:block;"><div class="chat-body clearfix" style="width:100%;"><div class="header"><small class=" text-muted"><span class="glyphicon glyphicon-time"></span>'+date+'</small><strong class="pull-right primary-font">'+
-      "You"+'</strong></div><p>'+
+      "You"+'</strong></div><p style="word-break:break-word">'+
       message+
       '</p></div></li>')
       //chatContainer.insertAdjacentHTML("beforeend","<hr>")
@@ -124,9 +124,9 @@ let reciveMassages =async function(channel){
     //if not my message
     else{
       chatContainer.insertAdjacentHTML("beforeend",
-      '<hr><li class="left clearfix"style="display:block;"><div class="chat-body clearfix"><div class="header"><strong class="primary-font">'
+      '<hr><li class="left clearfix"style="display:block;width:50%"><div class="chat-body clearfix"><div class="header"><strong class="primary-font">'
       +senderName+
-      '</strong> <small class="pull-right text-muted"><span class="glyphicon glyphicon-time"></span>'+date+'</small></div><p>'
+      '</strong> <small class="pull-right text-muted"><span class="glyphicon glyphicon-time"></span>'+date+'</small></div><p style="word-break:break-word" >'
       +message+
       '</p></div></li>')
     }
