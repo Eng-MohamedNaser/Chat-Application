@@ -10,7 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js"></script>
 </head>
 <body>
-    <div id="loginForm" >
+    <div id="loginForm" style="height: 90%;">
         <div style="margin: auto;border-end-start-radius:10%;border: 2px solid black; padding: 2%;"class="col-md-8"  >
             <form class="row" style="padding: 5%;">
                 <h1>MY Chat Application</h1>
@@ -30,7 +30,7 @@
     </div>
     
     <div style="margin: auto;display: none;"class="col-md-10" id="chat">
-        <form class="row col-md-10" style="padding: 5%;margin: auto;border: 2px solid black;border-end-start-radius:10%" onSubmit="return false;">
+        <form class="row col-md-10" style="padding: 5%;margin: auto;border: 2px solid black;border-end-start-radius:10%;height:90%;width:100%;" onSubmit="return false;">
             <div class="col-md-10">
                 <h1 style="display:inline;" id="groupeHeader">groupName</h1>
                 <span>new users : </span><span id="usersCount">0</span>
