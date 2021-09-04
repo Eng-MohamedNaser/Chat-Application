@@ -115,7 +115,7 @@ let reciveMassages =async function(channel){
     if(userId==senderId){
 
       chatContainer.insertAdjacentHTML("beforeend",
-      '<li class="right clearfix" style="margin-left:70%;display:block;"><div class="chat-body clearfix"><div class="header"><small class=" text-muted"><span class="glyphicon glyphicon-time"></span>'+date+'</small><strong class="pull-right primary-font">'+
+      '<li class="right clearfix" style="width:50%;margin-left:50%;display:block;"><div class="chat-body clearfix" style="width:100%;"><div class="header"><small class=" text-muted"><span class="glyphicon glyphicon-time"></span>'+date+'</small><strong class="pull-right primary-font">'+
       "You"+'</strong></div><p>'+
       message+
       '</p></div></li>')
@@ -125,7 +125,7 @@ let reciveMassages =async function(channel){
     else{
       chatContainer.insertAdjacentHTML("beforeend",
       '<hr><li class="left clearfix"style="display:block;"><div class="chat-body clearfix"><div class="header"><strong class="primary-font">'
-      +userName+
+      +senderName+
       '</strong> <small class="pull-right text-muted"><span class="glyphicon glyphicon-time"></span>'+date+'</small></div><p>'
       +message+
       '</p></div></li>')
@@ -152,7 +152,7 @@ async function sendMessage(){
   message = document.querySelector('#messageInput').value.trim().replace(/\r?\n/g, '<br>')
   if(message !=""){
     document.querySelector('#messageInput').value=""
-    document.querySelector('#seconds').innerText=60
+    document.querySelector('#seconds').innerText=2000
     date = new Date().toISOString()
     let body = {data:'{"message":"'+message+'","userName":"'+userName+'","userId":"'+userId+'","date":"'+date+'"}',
     name:"send-event",channel:roomName}
