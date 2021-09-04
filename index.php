@@ -55,7 +55,7 @@
                         <button type="button" class="btn btn-warning btn-md" id="send">Send Message</button>
                     </span>
                 </div>
-                <p>You will logout after : (<span id="seconds">2000</span>) second</p>
+                <p>You will logout after : (<span id="seconds">60</span>) second</p>
             </div>
             
             
